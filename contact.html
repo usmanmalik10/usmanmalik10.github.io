@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="CSS/Style.css" />
+
+    <script defer src="index.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <img src="images/logo2.png" alt="our main logo" class="logo" />
+      <nav class="navbar-">
+        <ul class="navbar-lists">
+          <li><a href="/index.html" class="navbar-link home-link">Home</a></li>
+          <li>
+            <a href="/about.html" class="navbar-link about-link">About</a>
+          </li>
+          <li>
+            <a href="/service.html" class="navbar-link services-link"
+              >Services</a
+            >
+          </li>
+          <li><a href="#" class="navbar-link portfolio-link">Portfolio</a></li>
+          <li>
+            <a href="/contact.html" class="navbar-link contact-link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!--===================================
+       Our Contact Us Section start   
+      ======================================-->
+    <section class="section section-contact">
+      <div class="container">
+        <h2 class="common-heading">Contact Us</h2>
+      </div>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8706.60599958669!2d74.20396693884508!3d32.19610411780026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391f29db11adee8d%3A0xcc9f516e5b3f543c!2sUsman%20Colony%2C%20Gujranwala%2C%20Punjab%2C%20Pakistan!5e0!3m2!1sen!2s!4v1660355929835!5m2!1sen!2s"
+        width="100%"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+      <div class="section-contact-main contact-container">
+        <form action="https://formspree.io/f/xdojowly" method="POST">
+          <div class="grid grid-two-column">
+            <div>
+              <label for="username"></label>
+              <input
+                type="text"
+                name="username"
+                id="username"
+                placeholder="Enter your Username"
+                required
+                autocomplete="off"
+              />
+            </div>
+            <div>
+              <label for="email"></label>
+              <input
+                type="email"
+                name="email"
+                id="username"
+                placeholder="Demo@gmail.com"
+                autocomplete="off"
+                required
+              />
+            </div>
+          </div>
+          <div>
+            <label for="Subject"></label>
+            <input
+              type="text"
+              name="subject"
+              placeholder="subject"
+              id="subject"
+              autocomplete="off"
+              required
+            />
+          </div>
+          <div>
+            <label for="textarea"></label>
+            <textarea
+              name="textarea"
+              id="textarea"
+              placeholder="Write about your job"
+              cols="30"
+              rows="10"
+              autocomplete="off"
+              required
+              minlength="10"
+            ></textarea>
+            <div>
+              <input
+                type="submit"
+                name="submit"
+                id="submit"
+                class="btn"
+                value="Send Message"
+              />
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!--===================================
+       Our Footer Section start   
+      ======================================-->
+
+    <footer class="section section-footer">
+      <div class="container grid grid-four-column">
+        <div class="f-about">
+          <h3>About</h3>
+          <p>
+            We have tested a number of registry fix and clean utilities and
+            present our top 3 list on our site for your convenience. Hope you
+            like it.
+          </p>
+        </div>
+
+        <div class="f-links">
+          <h3>Links</h3>
+          <ul>
+            <li>
+              <span><ion-icon name="arrow-forward-outline"></ion-icon></span
+              ><a href="#">home</a>
+            </li>
+            <li>
+              <span><ion-icon name="arrow-forward-outline"></ion-icon></span
+              ><a href="#">about</a>
+            </li>
+            <li>
+              <span><ion-icon name="arrow-forward-outline"></ion-icon></span
+              ><a href="#">services</a>
+            </li>
+            <li>
+              <span><ion-icon name="arrow-forward-outline"></ion-icon></span
+              ><a href="#">portfolio</a>
+            </li>
+
+            <li>
+              <span><ion-icon name="arrow-forward-outline"></ion-icon></span
+              ><a href="#">contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="f-services">
+          <h3>Services</h3>
+          <ul>
+            <li>
+              <span><ion-icon name="arrow-forward-outline"></ion-icon></span
+              ><a href="#">web design</a>
+            </li>
+            <li>
+              <span><ion-icon name="arrow-forward-outline"></ion-icon></span
+              ><a href="#">web development</a>
+            </li>
+            <li>
+              <span><ion-icon name="arrow-forward-outline"></ion-icon></span
+              ><a href="#">Mern Project</a>
+            </li>
+
+            <li>
+              <span><ion-icon name="arrow-forward-outline"></ion-icon></span
+              ><a href="#">Online Classes</a>
+            </li>
+            <li>
+              <span><ion-icon name="arrow-forward-outline"></ion-icon></span
+              ><a href="#">Youtube Course</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="f-address">
+          <h3>Have a Questions?</h3>
+          <address>
+            <div>
+              <p>
+                <span><ion-icon name="location-outline"></ion-icon></span>
+                Lahore, Pakistan
+              </p>
+            </div>
+
+            <div>
+              <p>
+                <span><ion-icon name="call-outline"></ion-icon></span>
+                <a href="tel:+92 3414498234"> +92 3414498234 </a>
+              </p>
+            </div>
+
+            <div>
+              <p>
+                <span><ion-icon name="mail-outline"></ion-icon></span>
+                <a href="mailto:usmanmaliksahib2611@gmail.com">
+                  usmanmaliksahib2611@gmail.com
+                </a>
+              </p>
+            </div>
+          </address>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="f-social-icons">
+          <a href="https://www.instagram.com/usman.malik010/" target="_blank">
+            <ion-icon class="icons" name="logo-instagram"></ion-icon>
+          </a>
+
+          <a href="https://www.linkedin.com/in/theusmanmalik/" target="_blank">
+            <ion-icon class="icons" name="logo-linkedin"></ion-icon>
+          </a>
+
+          <a href="https://github.com/usmanmalik10" target="_blank">
+            <ion-icon class="icons" name="logo-github"></ion-icon>
+          </a>
+        </div>
+
+        <div class="f-credits">
+          <p>
+            Copyright ©2022 All rights reserved | This template is made with ❤
+            by Usman Mailk
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!--===================================
+         Our JavaScript Section start   
+        ======================================-->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  </body>
+</html>
