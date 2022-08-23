@@ -135,7 +135,7 @@ li {
   box-shadow: var(--shadow);
 }
 .sticky .section-hero {
-  /* margin-top: 10rem; */
+  margin-top: 10rem;
 }
 
 /* Reusable Code Section  */
