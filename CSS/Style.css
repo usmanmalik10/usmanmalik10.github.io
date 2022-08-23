@@ -122,6 +122,22 @@ li {
   display: none;
 }
 
+/* sticky Navbar  */
+.sticky .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  background-color: rgba(255, 255, 255, 1);
+  padding-top: 0;
+  padding-bottom: 0;
+  box-shadow: var(--shadow);
+}
+.sticky .section-hero {
+  /* margin-top: 10rem; */
+}
+
 /* Reusable Code Section  */
 
 .section {
@@ -913,7 +929,7 @@ Media Queries  section start
   }
   .mobile-navbar-btn {
     display: block;
-    z-index: 999;
+    z-index: 9999;
     border: 3px solid var(--black);
     color: var(--black);
   }

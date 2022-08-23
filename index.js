@@ -1,16 +1,38 @@
+const heroSection = document.querySelector('.section-hero');
+
 //========================================
 //Creating a responsive navbar component
 //========================================
 
 const mobile_nav = document.querySelector('.mobile-navbar-btn');
-const nav_header = document.querySelector('.header');
+const headerElem = document.querySelector('.header');
 
-const toggleNavbar = () => {
-  // alert("hi");
-  nav_header.classList.toggle('active');
-};
+// const toggleNavbar = () => {
+//   // alert("hi");
+//   nav_header.classList.toggle('active');
+// };
 
-mobile_nav.addEventListener('click', () => toggleNavbar());
+mobile_nav.addEventListener('click', () =>
+  headerElem.classList.toggle('active')
+);
+//========================================
+//Creating a portfolio tabbed component
+//========================================
+const observer = new IntersectionObserver(
+  (entries) => {
+    const ent = entries[0];
+    // console.log(ent);
+    !ent.isIntersecting
+      ? document.body.classList.add('sticky')
+      : document.body.classList.remove('sticky');
+  },
+  {
+    root: null,
+    threshold: 0,
+  }
+);
+
+observer.observe(heroSection);
 
 //========================================
 //Creating a portfolio tabbed component
@@ -118,7 +140,7 @@ widthSize.addListener(myFunction);
 //  scroll to top
 // ========================================
 
-const heroSection = document.querySelector('.section-hero');
+// const heroSection = document.querySelector('.section-hero');
 
 const footerElm = document.querySelector('.section-footer');
 
